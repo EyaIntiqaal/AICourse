@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from routers.chat import router as chat_router
 
 
-app = FastAPI(title="FastAPI Groq Workshop")
+app = FastAPI(title="EYA FastAPI Groq Workshop")
 
 app.include_router(chat_router)
 
