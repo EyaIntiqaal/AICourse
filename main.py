@@ -24,6 +24,8 @@ from routers.chat import router as chat_router
 app = FastAPI(title="TOUTA FastAPI Groq Workshop")
 
 # Include the chat router which registers chat-related endpoints on the app.
+# Using include_router keeps route definitions modular and allows the router
+# to be developed and tested independently from the main application.
 app.include_router(chat_router)
 
 
